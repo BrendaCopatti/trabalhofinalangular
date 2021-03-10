@@ -18,6 +18,7 @@ const routes: Routes = [
     children: [
 
       { path: 'empresa', loadChildren: './modules/cadastros/empresa/empresa.module#EmpresaModule' },
+      { path: 'produto', loadChildren: './modules/cadastros/produto/produto.module#ProdutoModule' },
     ]
   }
 ];

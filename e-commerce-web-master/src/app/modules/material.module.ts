@@ -28,7 +28,8 @@ import {
         MatFormFieldModule,
         MatSelectModule,
         MatMenuModule,
-    ]
+    ],
+    declarations: []
 })
 export class MaterialModule {
 

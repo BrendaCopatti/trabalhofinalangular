@@ -1,0 +1,37 @@
+<form [formGroup]="form" #fr="ngForm">
+    <app-crud [form]="fr" titulo="Produto" [api]="service">
+      <div fxLayout="column" fxLayoutGap="16px">
+  
+        <mat-form-field fxFlex [appearance]="'outline'">
+            <mat-label>Nome</mat-label>
+            <input matInput type="text" formControlName="nome">
+            <mat-error>{{nome.errors | erro}}</mat-error>
+        </mat-form-field>
+        
+        <mat-form-field fxFlex [appearance]="'outline'">
+            <mat-label>Marca</mat-label>
+            <input matInput type="text" formControlName="marca">
+            <mat-error>{{marca.errors | erro}}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field fxFlex [appearance]="'outline'">
+            <mat-label>Código de barras</mat-label>
+            <input matInput type="text" formControlName="codigoBarra">
+            <mat-error>{{codigoBarra.errors | erro}}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field fxFlex [appearance]="'outline'">
+            <mat-label>Preço</mat-label>
+            <input matInput type="number" formControlName="preco">
+            <mat-error>{{preco.errors | erro}}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field fxFlex [appearance]="'outline'">
+            <mat-label>Imagem</mat-label>
+            <input matInput type="text" formControlName="imagem">
+            <mat-error>{{imagem.errors | erro}}</mat-error>
+        </mat-form-field>
+
+      </div>
+    </app-crud>
+</form>
