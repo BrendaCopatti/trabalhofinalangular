@@ -25,7 +25,7 @@ export class ProdutoComponent {
       marca: [null, Validators.required],
       codigoBarra: [null, Validators.required],
       preco: [null, Validators.required],
-      imagem: [null, Validators.required],
+      imagem: [null, null],
     });
   }
 

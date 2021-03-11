@@ -16,7 +16,7 @@
 
         <mat-form-field fxFlex [appearance]="'outline'">
             <mat-label>Código de barras</mat-label>
-            <input matInput type="text" formControlName="codigoBarra">
+            <input matInput type="text" formControlName="codigoBarra" >
             <mat-error>{{codigoBarra.errors | erro}}</mat-error>
         </mat-form-field>
 
@@ -28,7 +28,7 @@
 
         <mat-form-field fxFlex [appearance]="'outline'">
             <mat-label>Imagem</mat-label>
-            <input matInput type="text" formControlName="imagem">
+            <input matInput type="url" formControlName="imagem">
             <mat-error>{{imagem.errors | erro}}</mat-error>
         </mat-form-field>
 
